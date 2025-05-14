@@ -19,7 +19,7 @@ class Saludo(Base):
     id = Column(Integer, primary_key=True)
     mensaje = Column(String(200))
     tipo = Column(String(200))
-
+    #representacion de los objetos
     def __str__(self):
         return f"{self.id} - {self.mensaje} - {self.tipo}"
 
