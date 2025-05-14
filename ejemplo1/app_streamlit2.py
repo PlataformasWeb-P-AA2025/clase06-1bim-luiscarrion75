@@ -10,16 +10,7 @@ session = Session()
 # Consultar saludos
 saludos = session.query(Saludo2).all()
 
-# Mostrar título
-st.title("Presentación de todos los Saludos")
-
-# Mostrar solo los IDs
-for saludo in saludos:
-    st.write(saludo.id)
-    st.markdown("---")
-
 # Mostrar tabla con todos los datos
-st.markdown("---")
 st.title("Presentación de todos los Saludos en Tabla")
 
 lista = []

@@ -4,7 +4,7 @@ from crear_base import Saludo2
 from configuracion import engine
 
 # Leer archivo con separador '|'
-df = pd.read_csv("data/saludos.csv", sep='|')
+df = pd.read_csv("data/saludos_mundo.csv", sep='|')
 
 # Crear la sesión
 Session = sessionmaker(bind=engine)
